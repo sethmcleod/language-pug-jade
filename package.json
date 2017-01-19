@@ -1,19 +1,16 @@
 {
-  "name": "language-pug",
-  "version": "0.1.0",
+  "name": "language-pug-jade",
+  "version": "0.0.0",
   "description": "🐶 Pug (was Jade) syntax highlighting",
   "keywords": [
     "atom",
     "pug",
     "jade",
-    "language",
+    "language"
   ],
   "author": "Seth Mcleod <me@sethmcleod.com> (https://sethmcleod.com)",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sethmcleod/language-pug.git"
-  },
+  "repository": "https://github.com/sethmcleod/language-pug",
   "engines": {
     "atom": ">=0.50.0"
   },
