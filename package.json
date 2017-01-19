@@ -1,7 +1,7 @@
 {
   "name": "language-pug-jade",
   "version": "0.1.0",
-  "description": "🐶 Pug (was Jade) syntax highlighting",
+  "description": "🐶 Pug and Jade syntax highlighting",
   "keywords": [
     "atom",
     "pug",

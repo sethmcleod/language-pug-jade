@@ -1,6 +1,6 @@
-# language-pug
+# language-pug-jade
 
-[Pug](https://github.com/pugjs) (was **Jade**) syntax highlighting for Atom, adapted from [atom-jade](https://github.com/devongovett/atom-jade) by [devongovett](https://github.com/devongovett).
+[Pug](https://github.com/pugjs) **Jade** syntax highlighting for Atom, because name changes are confusing. Adapted from [atom-jade](https://github.com/devongovett/atom-jade) by [devongovett](https://github.com/devongovett).
 
 This was originally just for my personal use since the [language-pug](https://github.com/genoma/language-pug) package by [genoma](https://github.com/genoma) has some highlighting issues. I don't plan on updating this, but will merge any _(decent)_ PRs that come through 👍
 
