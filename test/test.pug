@@ -252,6 +252,35 @@ html
       block with #[i inline] tag.
 
     | pipe text with #[i inline] tag.
+    
+    //- Filters
+    div
+      :markdown-it
+        - This is *some* _markdown_.
+    
+    script
+      :coffee
+        alert "I knew it!" if elvis?
+    
+    script
+      :babel(presets=['es2015'])
+        const myFunc = () => `This is ES2015 ${ye}.`;
+    
+    style
+      :sass(some-argument)
+        nav
+          ul
+            margin: 0
+    
+    style
+      :less
+        body {
+          div {
+            a {
+              color: red;
+            }
+          }
+        }
 
 
     //- angular with valign
@@ -292,3 +321,7 @@ html
         var object = {};
     style.
         .test { color: #fff }
+    
+    style
+      :sass()
+        body {background: red;}
