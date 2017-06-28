@@ -99,7 +99,7 @@
     ]
   }
   {
-    'begin': '^(\\s*):(markdown)(?=\\(|$)$'
+    'begin': '^(\\s*):(markdown(?:-it)?)(?=\\(|$)'
     'beginCaptures':
       '2':
         'name': 'constant.language.name.markdown.filter.jade'
@@ -110,12 +110,12 @@
         'include': '#filter_args'
       }
       {
-        'include': 'text.html.markdown'
+        'include': 'source.gfm'
       }
     ]
   }
   {
-    'begin': '^(\\s*):(sass)(?=\\(|$)$'
+    'begin': '^(\\s*):(sass)(?=\\(|$)'
     'beginCaptures':
       '2':
         'name': 'constant.language.name.sass.filter.jade'
@@ -131,7 +131,23 @@
     ]
   }
   {
-    'begin': '^(\\s*):(less)(?=\\(|$)$'
+    'begin': '^(\\s*):(scss)(?=\\(|$)'
+    'beginCaptures':
+      '2':
+        'name': 'constant.language.name.scss.filter.jade'
+    'end': '^(?!(\\1\\s)|\\s*$)'
+    'name': 'source.scss.filter.jade'
+    'patterns': [
+      {
+        'include': '#filter_args'
+      }
+      {
+        'include': 'source.css.scss'
+      }
+    ]
+  }
+  {
+    'begin': '^(\\s*):(less)(?=\\(|$)'
     'beginCaptures':
       '2':
         'name': 'constant.language.name.less.filter.jade'
@@ -142,12 +158,12 @@
         'include': '#filter_args'
       }
       {
-        'include': 'source.less'
+        'include': 'source.css.less'
       }
     ]
   }
   {
-    'begin': '^(\\s*):(stylus)(?=\\(|$)$'
+    'begin': '^(\\s*):(stylus)(?=\\(|$)'
     'beginCaptures':
       '2':
         'name': 'constant.language.name.stylus.filter.jade'
@@ -159,6 +175,22 @@
       }
       {
         'include': 'source.stylus'
+      }
+    ]
+  }
+  {
+    'begin': '^(\\s*):(babel)(?=\\(|$)'
+    'beginCaptures':
+      '2':
+        'name': 'constant.language.name.babel.filter.jade'
+    'end': '^(?!(\\1\\s)|\\s*$)'
+    'name': 'source.babel.filter.jade'
+    'patterns': [
+      {
+        'include': '#filter_args'
+      }
+      {
+        'include': 'source.js'
       }
     ]
   }
