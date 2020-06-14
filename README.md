@@ -4,7 +4,7 @@
 
 [Pug](https://github.com/pugjs) _and_ **Jade** syntax highlighting for Atom, because name changes are confusing. Adapted from [atom-jade](https://github.com/devongovett/atom-jade) by [devongovett](https://github.com/devongovett).
 
-Feel free to submit PRs 👍
+Not actively maintained but I'll review any pull requests 👍
 
 ## Change log
 
